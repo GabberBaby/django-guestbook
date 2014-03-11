@@ -15,7 +15,6 @@ guestbook/views.py
 guestbook/locale/en/LC_MESSAGES/django.po
 guestbook/locale/nl/LC_MESSAGES/django.po
 guestbook/locale/ru/LC_MESSAGES/django.po
-guestbook/templates/404.html
 guestbook/templates/guestbook/400-debug.html
 guestbook/templates/guestbook/entry_list.html
 guestbook/templates/guestbook/preview.html

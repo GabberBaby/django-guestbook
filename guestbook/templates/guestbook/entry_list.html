@@ -12,6 +12,8 @@
 {% endfor %}
 
 <form action="{% url 'guestbook-post' %}" method="POST">
+    {% csrf_token %}
+
     {% for field in form %}
       {% if field.is_hidden %}
         {{ field }}
