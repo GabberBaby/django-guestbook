@@ -19,7 +19,7 @@ Installation
     
 	easy_install django-guestbook
     
-    **Or** get the latest & greatest from Github and link it to your
+    Or get the latest & greatest from Github and link it to your
     application tree::
     
 	git clone git://github.com/GabberBaby/django-guestbook.git
@@ -27,7 +27,7 @@ Installation
 
     (Here `$PROJECT_DIR` is your project root directory.)
 
-    recommended way::
+    **recommended way**::
 
 	pip install git+https://github.com/GabberBaby/django-guestbook
 
