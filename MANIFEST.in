@@ -2,3 +2,4 @@ include LICENSE
 include README.rst
 recursive-include guestbook/templates *
 recursive-include guestbook/locale *
+recursive-include guestbook/templates/guestbook *
