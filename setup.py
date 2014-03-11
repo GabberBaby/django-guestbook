@@ -17,11 +17,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from distutils.core import setup
+import os
+from setuptools import setup
 
-try:
-    README = open('README.rst').read()
-except:
-    README = None
+README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
+
+# allow setup.py to be run from any path
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name = 'django-guestbook',
