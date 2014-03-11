@@ -6,7 +6,7 @@
 <h1>Guestbook</h1>
 {% for entry in entry_list %}
     <div class="entry_{% cycle odd,even %}">
-        <p><b>{% if entry.url %}<a href="{{ entry.url }}">{% endif %}{{ entry.name }}{% if entry.url %}</a>{% endif %}</b> оставил комментарий, {{ entry.submit_date|date:"j F Y" }} в {{ entry.submit_date|date:"G:i" }} uur:</p>
+        <p><b>{% if entry.url %}<a href="{{ entry.url }}">{% endif %}{{ entry.name }}{% if entry.url %}</a>{% endif %}</b> оставил комментарий, {{ entry.submit_date|date:"j F Y" }} в {{ entry.submit_date|date:"G:i" }} часов:</p>
         {{ entry.text|linebreaks }}
     </div>
 {% endfor %}
