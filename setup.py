@@ -16,9 +16,8 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#from distutils.core import setup
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 
@@ -33,7 +32,9 @@ setup(
     author = 'Mathijs de Bruin, gabberbaby',
     author_email = 'drbob@dokterbob.net, igorkupreev@gmail.com',
     url = 'https://github.com/GabberBaby/django-guestbook',
-    packages = ['guestbook', ],
+    packages = find_packages(),
+    include_package_data = True,
+    package_data={'forum':['templates/*.html', 'templates/forum/*.html','templates/forum/feeds/*.html']},
     classifiers = ['Development Status :: 4 - Beta',
                    'Environment :: Web Environment',
                    'Framework :: Django',
