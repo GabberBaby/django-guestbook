@@ -24,9 +24,13 @@ Installation
     
 	git clone git://github.com/GabberBaby/django-guestbook.git
 	ln -s django-guestbook/guestbook $PROJECT_DIR/guestbook
-    
+
     (Here `$PROJECT_DIR` is your project root directory.)
-    
+
+    recommended way::
+
+    pip install git+https://github.com/GabberBaby/django-guestbook
+
 #)  Add popularity to `INSTALLED_APPS` in settings.py::
 
 	INSTALLED_APPS = (
