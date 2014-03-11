@@ -29,7 +29,7 @@ Installation
 
     recommended way::
 
-    pip install git+https://github.com/GabberBaby/django-guestbook
+	pip install git+https://github.com/GabberBaby/django-guestbook
 
 #)  Add popularity to `INSTALLED_APPS` in settings.py::
 
